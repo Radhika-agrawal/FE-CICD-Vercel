@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greet Me</title>
+    <style>
+        h2{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <h2>Greet Me</h2>
     <p>This website can greet you ! hehe</p>
-</body>
+    <input id="name"/>
+    <button onclick="greetMe()">Greet</button>
+    <script>
+        function greetMe(){
+            const name = document.getElementById("name")
+            alert("Have a nice day, "+name.value)
+        }
+    </script>
+</body> 
 </html>
